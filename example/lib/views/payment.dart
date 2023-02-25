@@ -1,21 +1,22 @@
-# Moyasar Payment by UNICODE
+import 'package:flutter/material.dart';
+import 'package:unicode_moyasar/unicode_moyasar.dart';
 
-A library for making online payment by using Moyasar payment gateway developed by UNICODE Team
+class PaymentView extends StatefulWidget {
+  const PaymentView({Key? key}) : super(key: key);
 
-## Features
+  @override
+  State<PaymentView> createState() => _PaymentViewState();
+}
 
-- Card payment (MADA, VISA, MASTERCARD, AMEX)
-
-- Apple Pay
-
-- Stc pay
-
-## Getting started
-
-Please check our `/example` project to better understand.
-
-```dart
-    MoyasarPayment(
+class _PaymentViewState extends State<PaymentView> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Checkout"),
+        shape: const StadiumBorder(),
+      ),
+      body: MoyasarPayment(
         moyasarPaymentData: MoyasarPaymentData(
           appName: "UNICODE",
           secretKey: "sk_key",
@@ -30,12 +31,14 @@ Please check our `/example` project to better understand.
           ],
         ),
         onPaymentSucess: (response) {
-            //TODO Handle success payment response
+          //TODO Handle success payment response
           debugPrint("Success ------> ${response.toMap().toString()}");
         },
         onPaymentFailed: (response) {
           //TODO Handle failed payment response
           debugPrint("Failed ------> ${response.toMap().toString()}");
         },
-      )
-```
+      ),
+    );
+  }
+}
