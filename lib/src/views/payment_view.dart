@@ -68,7 +68,6 @@ class _PaymentViewState extends State<PaymentView> {
                 await _handleSuccessPayment(currentLoadedUrl);
               }
               //* Failed
-
               return navigationActionPolicy;
             },
           ),

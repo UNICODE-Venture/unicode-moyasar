@@ -4,8 +4,10 @@
 
 name: unicode_moyasar
 description: A library for making online payment by using Moyasar payment gateway developed by UNICODE Team
-version: 0.0.1
-homepage:
+version: 1.0.0
+repository: https://github.com/UNICODE-Venture/unicode-moyasar
+homepage: https://github.com/UNICODE-Venture/unicode-moyasar
+issue_tracker: https://github.com/UNICODE-Venture/unicode-moyasar/issues
 
 environment:
   sdk: ">=2.19.2 <3.0.0"

@@ -32,11 +32,11 @@ class _PaymentViewState extends State<PaymentView> {
         ),
         onPaymentSucess: (response) {
           //TODO Handle success payment response
-          debugPrint("Success ------> ${response.toMap().toString()}");
+          debugPrint("Success ------> ${response.toMap()}");
         },
         onPaymentFailed: (response) {
           //TODO Handle failed payment response
-          debugPrint("Failed ------> ${response.toMap().toString()}");
+          debugPrint("Failed ------> ${response.toMap()}");
         },
       ),
     );
