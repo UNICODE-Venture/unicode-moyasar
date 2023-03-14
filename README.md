@@ -1,18 +1,20 @@
-# Moyasar Payment by UNICODE
+# Moyasar Payment by **UNICODE Team**
 
-A library for making online payment by using Moyasar payment gateway developed by UNICODE Team
+A library for making online payment by using Moyasar payment gateway developed by **UNICODE Team**.
 
-## Features
+# **Features support**
 
-- Card payment (MADA, VISA, MASTERCARD, AMEX)
+![Payment](assets/images/cards.png)
 
-- Apple Pay
+- **Card support (_mada_, visa, mastercard)**
+- **Apple Pay**
+- **stc pay**
 
-- Stc pay
+![Logo](assets/screenshots/sc.png)
 
 ## Getting started
 
-Please check our `/example` project to better understand.
+Please have a look at our [/example](https://pub.dev/packages/unicode_moyasar/example) project for a better understanding of implementations.
 
 ```dart
     MoyasarPayment(
@@ -39,3 +41,15 @@ Please check our `/example` project to better understand.
         },
       )
 ```
+
+# Apple pay Setup
+
+- In order to use Apple Pay within your project, you first need to our domain in **Apple Pay - domains** settings in your **Moyasar Dashboard**.
+
+- Please visit their [official docs](https://moyasar.com/docs/dashboard/apple-pay/web-registration/) to read more about how to add the domain for **Apple pay**.
+
+```dart
+ unicode-moyasar.web.app
+```
+
+- Please skip the steps number **_1 and 2_** and use the **URL** provided above.

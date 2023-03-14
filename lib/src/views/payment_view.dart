@@ -54,7 +54,7 @@ class _PaymentViewState extends State<PaymentView> {
               NavigationActionPolicy navigationActionPolicy =
                   NavigationActionPolicy.ALLOW;
 
-              // printMeLog(currentLoadedUrl);
+              printMeLog(currentLoadedUrl);
 
               //* Failed
               if (currentLoadedUrl == null ||

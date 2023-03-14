@@ -34,6 +34,12 @@ class MoyasarPaymentData {
         assert(purchaseAmount > 1, AppTexts.amountError),
         assert(secretKey.trim().isNotEmpty, AppTexts.secretKey),
         assert(
+            paymentEnvironment.isLive
+                ? (secretKey.contains("live") &&
+                    publishableSecretKey.contains("live"))
+                : true,
+            AppTexts.liveCred),
+        assert(
             publishableSecretKey.trim().isNotEmpty, AppTexts.secretPublishtKey);
 
   Map<String, dynamic> toMap() => {
