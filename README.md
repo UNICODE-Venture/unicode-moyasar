@@ -4,13 +4,13 @@ A library for making online payment by using Moyasar payment gateway developed b
 
 # **Features support**
 
-![Payment](assets/images/cards.png)
+![Payment](https://raw.githubusercontent.com/UNICODE-Venture/unicode-moyasar/main/assets/images/cards.png)
 
 - **Card support (_mada_, visa, mastercard)**
 - **Apple Pay**
 - **stc pay**
 
-![Logo](assets/screenshots/sc.png)
+![Payment View](https://raw.githubusercontent.com/UNICODE-Venture/unicode-moyasar/main/assets/screenshots/sc.png)
 
 ## Getting started
 
