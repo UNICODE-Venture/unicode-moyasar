@@ -37,11 +37,11 @@ class _PaymentViewState extends State<PaymentView> {
       body: MoyasarPayment(
         moyasarPaymentData: MoyasarPaymentData(
           appName: "UNICODE",
-          secretKey: "sk_test_key",
-          publishableSecretKey: "pk_test_key",
-          purchaseAmount: 75.50,
+          secretKey: "sk_live_",
+          publishableSecretKey: "pk_live",
+          purchaseAmount: 1.50,
           locale: PaymentLocale.en,
-          paymentEnvironment: PaymentEnvironment.test,
+          paymentEnvironment: PaymentEnvironment.live,
           paymentOptions: [
             PaymentOption.card,
             PaymentOption.applepay,
@@ -50,11 +50,11 @@ class _PaymentViewState extends State<PaymentView> {
         ),
         onPaymentSucess: (response) {
           //TODO Handle success payment response
-          debugPrint("Success ------> ${response.toMap()}");
+          print("Success ------> ${response.toMap()}");
         },
         onPaymentFailed: (response) {
           //TODO Handle failed payment response
-          debugPrint("Failed ------> ${response.toMap()}");
+          print("Failed ------> ${response.toMap()}");
         },
       ),
     );

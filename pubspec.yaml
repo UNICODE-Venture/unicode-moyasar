@@ -4,13 +4,13 @@
 
 name: unicode_moyasar
 description: A library for making online payment by using Moyasar payment gateway developed by UNICODE Team
-version: 1.0.3
+version: 2.0.0
 repository: https://github.com/UNICODE-Venture/unicode-moyasar
 homepage: https://github.com/UNICODE-Venture/unicode-moyasar
 issue_tracker: https://github.com/UNICODE-Venture/unicode-moyasar/issues
 
 environment:
-  sdk: ">=2.19.2 <3.0.0"
+  sdk: ">=2.19.2 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
@@ -23,7 +23,8 @@ dependencies:
   provider: ^6.0.5
 
   #* Web view
-  flutter_inappwebview: ^5.7.2+3
+  flutter_inappwebview: ^6.1.0
+  # flutter_inappwebview: ^5.7.2+3
 
   #* Network
   http: ^0.13.5

@@ -36,7 +36,7 @@ class PaymentProvider extends ChangeNotifier {
     }
 
     paymentUrlRequest = URLRequest(
-      url: Uri.parse(
+      url: WebUri(
         "${MoyasarPaymentControllers.moyasarPaymentUrl}?purchaseAmount=${moyasarPaymentData.purchaseAmount}&appName=${moyasarPaymentData.appName}&pSk=$publishableSecretKey&locale=${moyasarPaymentData.locale.index}&paymentOptions=$paymentOptions",
       ),
     );
